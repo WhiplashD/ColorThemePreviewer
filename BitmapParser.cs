@@ -24,7 +24,9 @@ namespace ColorThemePreviewer
 
             while (pixelLinePosition <= 510)
             {
-                graphics.FillRectangle(ReturnNewBrush(String.IsNullOrEmpty(_r) ? colorGradientColor : int.Parse(_r), String.IsNullOrEmpty(_g) ? colorGradientColor : int.Parse(_g), String.IsNullOrEmpty(_b) ? colorGradientColor : int.Parse(_b)), pixelLinePosition, 0, 85, 100);
+                graphics.FillRectangle(ReturnNewBrush(String.IsNullOrEmpty(_r) ? colorGradientColor : int.Parse(_r), 
+                    String.IsNullOrEmpty(_g) ? colorGradientColor : int.Parse(_g), 
+                    String.IsNullOrEmpty(_b) ? colorGradientColor : int.Parse(_b)), pixelLinePosition, 0, 85, 100);
                 pixelLinePosition += 85;
                 colorGradientColor += 60;
             }
